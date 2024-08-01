@@ -1,0 +1,56 @@
+/* ProductAdvertisement.css */
+body{
+    background-color: #EEEEEF;
+}
+.product-advertisement {
+
+    display:flex;
+    flex-direction: row;
+    /* margin-top: 50px; */
+  }
+  .leftdv{
+text-align: center;
+text-align: justify;
+background-color:#E0E7F4;
+margin-left: 30px;
+padding-left: 400px;
+padding-top: 25px;
+width: 1000px;
+height: 200px;
+  }
+
+  .promotion-image {
+    position: relative;
+    max-width: 500px;
+    margin-left: 30px;
+    background-color: #E0E7F4;
+  }
+  
+  .promotion-image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .low-carb {
+    font-size: 2.5rem;
+    color: #00ff00; /* Green */
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    color: #ff0000; /* Red */
+  }
+  
+  .product-description {
+    font-size: 1.5rem;
+    color: #ff0000; /* Red */
+  }
