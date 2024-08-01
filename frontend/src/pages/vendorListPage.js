@@ -19,7 +19,7 @@ console.log(vendors)
   const chunks = chunkArray(vendors, 3);
 
   useEffect(() => {
-    axios.get("http://localhost:3003/api/getvendors")
+    axios.get("https://nuturemite-1.onrender.com/api/getvendors")
       .then((res) => {
         const vendorUsers = res.data.users.filter(user => user.type === "vendor");
         setVendors(vendorUsers);
@@ -30,7 +30,7 @@ console.log(vendors)
   }, []);
 
   const handleDelete = (vendorId) => {
-    axios.delete(`http://localhost:3003/api/getvendors/${vendorId}`)
+    axios.delete(`https://nuturemite-1.onrender.com/api/getvendors/${vendorId}`)
       .then((res) => {
         // console.log(res);
         alert("Do you want to delete the vendor")

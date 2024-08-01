@@ -30,7 +30,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3003/api/login', formData);
+      const response = await axios.post('https://nuturemite-1.onrender.com/api/login', formData);
       const userType = response.data.data.type; // Extract the user type from the response
       console.log(userType)
 if(userType==='vendor'){

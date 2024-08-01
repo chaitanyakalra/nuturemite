@@ -22,7 +22,7 @@ const InventoryManagement = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:3003/api/getvendors", form)
+    axios.post("https://nuturemite-1.onrender.com/api/getvendors", form)
       .then((res) => {
         console.log(res);
       })
@@ -47,7 +47,7 @@ const InventoryManagement = () => {
   const chunks = chunkArray(items, 4);
 
   useEffect(() => {
-    axios.get(`http://localhost:3003/api/getvendors/${vendorId}`)
+    axios.get(`https://nuturemite-1.onrender.com/api/getvendors/${vendorId}`)
       .then((res) => {
         setVendors(res.data.users);
       })

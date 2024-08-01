@@ -27,7 +27,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3003/api/register", formData)
+    axios.post("https://nuturemite-1.onrender.com/api/register", formData)
       .then(response => {
         console.log(response);
         setOpen(true);
