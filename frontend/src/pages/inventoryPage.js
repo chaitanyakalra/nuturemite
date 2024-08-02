@@ -3,7 +3,7 @@ import { Card, Form, Button } from 'react-bootstrap';
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import "./styles/Inventorystyle.css"
+import "/inventory.css"
 
 const InventoryManagement = () => {
   const { id: vendorId } = useParams();
@@ -55,7 +55,7 @@ const InventoryManagement = () => {
         console.log(err);
       });
 
-    axios.get(`http://localhost:8080/api/getvendorproducts`)
+    axios.get(`https://nuturemite-1.onrender.com/api/getvendorproducts`)
       .then((res) => {
         const vendorUsers = res.data.user.filter(user => user.vendorname === vendorId );
         setItems(vendorUsers);

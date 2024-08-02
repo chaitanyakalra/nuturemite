@@ -7,7 +7,8 @@ import VendorList from './vendorListPage';
 const AdminPage = () => {
   return (
     <div>
-      <h1>Admin Dashboard</h1>
+      
+      <h1 style={{alignContent:"center"}}>Admin Dashboard</h1>
       {/* <VendorList /> */}
       <VendorList/>
     </div>
