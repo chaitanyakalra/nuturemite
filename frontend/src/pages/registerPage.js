@@ -31,16 +31,6 @@ const Register = () => {
       .then(response => {
         console.log(response);
         setOpen(true);
-        // if()
-        // if (formData.type === 'vendor') {
-        //   setTimeout(() => {
-        //     navigate('/vendorpanel');
-        //   }, 2000); // Delay to allow Snackbar to display
-        // } else if (formData.type === 'admin') {
-        //   setTimeout(() => {
-        //     navigate('/adminpanel');
-        //   }, 2000); // Delay to allow Snackbar to display
-        // }
       })
       .catch(error => {
         console.error("There was an error registering!", error);
