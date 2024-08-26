@@ -41,7 +41,7 @@ const Carousel = () => {
         </Box>
       </Box>
       <Box sx={{ height: '60vh', backgroundColor: '#AEBEC4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <Box textAlign="center">
+        <Box textAlign="center" sx={{}}>
           <Typography variant="subtitle1" color="textSecondary">
             Special Offer
           </Typography>

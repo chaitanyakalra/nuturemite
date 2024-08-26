@@ -3,7 +3,7 @@ import { Card, Form, Button } from 'react-bootstrap';
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import "/inventory.css"
+import ".//inventory.css"
 
 const InventoryManagement = () => {
   const { id: vendorId } = useParams();
